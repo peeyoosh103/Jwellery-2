@@ -55,11 +55,9 @@ import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import com.example.common.CustomNumberField
 import com.example.common.PeeyooshTopBar
-import com.example.common.PuritySelectorChips
 import com.example.common.ResultActionButtons
 import com.example.common.ResultSummaryCard
 import com.example.common.WeightInputSection
-import com.example.models.GoldPurity
 import com.example.models.MetalType
 import com.example.ui.theme.GoldGradientEnd
 import com.example.ui.theme.GoldGradientStart
@@ -188,7 +186,7 @@ fun GoldCalculatorScreen(
                     .padding(horizontal = 16.dp, vertical = 12.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                // 🎙️ STEP 3 & STEP 7: Voice Control Panel
+                // 🎙️ Voice Control Panel
                 VoiceControlPanel(
                     voiceState = voiceState,
                     settings = settings,
@@ -198,19 +196,7 @@ fun GoldCalculatorScreen(
                         micPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
                     },
                     onStartListening = viewModel::startVoiceListening,
-                    onStopListening = viewModel::stopVoiceListening,
-                    onExampleClicked = { example ->
-                        viewModel.processVoiceCommand(example)
-                    }
-                )
-
-                // 🟡 Purity Selector (24K, 22K, 18K)
-                PuritySelectorChips(
-                    options = GoldPurity.entries,
-                    selected = uiState.selectedPurity,
-                    onSelect = viewModel::onPuritySelect,
-                    labelProvider = { it.label },
-                    finenessProvider = { it.fineness }
+                    onStopListening = viewModel::stopVoiceListening
                 )
 
                 // Weight Section (Gram + Milligram)

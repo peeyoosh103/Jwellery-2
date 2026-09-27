@@ -55,12 +55,10 @@ import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import com.example.common.CustomNumberField
 import com.example.common.PeeyooshTopBar
-import com.example.common.PuritySelectorChips
 import com.example.common.ResultActionButtons
 import com.example.common.ResultSummaryCard
 import com.example.common.WeightInputSection
 import com.example.models.MetalType
-import com.example.models.SilverPurity
 import com.example.ui.theme.PeeyooshTheme
 import com.example.ui.theme.PurpleGradientEnd
 import com.example.ui.theme.PurpleGradientStart
@@ -149,10 +147,10 @@ fun SilverCalculatorScreen(
                             Surface(
                                 shape = CircleShape,
                                 color = when {
-                                !settings.isVoiceControlEnabled -> MaterialTheme.colorScheme.surfaceVariant
-                                isListening -> MaterialTheme.colorScheme.primary
-                                else -> MaterialTheme.colorScheme.primaryContainer
-                            },
+                                    !settings.isVoiceControlEnabled -> MaterialTheme.colorScheme.surfaceVariant
+                                    isListening -> MaterialTheme.colorScheme.primary
+                                    else -> MaterialTheme.colorScheme.primaryContainer
+                                },
                                 modifier = Modifier.size(36.dp)
                             ) {
                                 Box(contentAlignment = Alignment.Center) {
@@ -160,10 +158,10 @@ fun SilverCalculatorScreen(
                                         imageVector = if (!settings.isVoiceControlEnabled) Icons.Default.MicOff else Icons.Default.Mic,
                                         contentDescription = "Voice Control",
                                         tint = when {
-                                        !settings.isVoiceControlEnabled -> MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
-                                        isListening -> MaterialTheme.colorScheme.onPrimary
-                                        else -> MaterialTheme.colorScheme.onPrimaryContainer
-                                    },
+                                            !settings.isVoiceControlEnabled -> MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
+                                            isListening -> MaterialTheme.colorScheme.onPrimary
+                                            else -> MaterialTheme.colorScheme.onPrimaryContainer
+                                        },
                                         modifier = Modifier.size(20.dp)
                                     )
                                 }
@@ -189,7 +187,7 @@ fun SilverCalculatorScreen(
                         .padding(horizontal = 16.dp, vertical = 12.dp),
                     verticalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
-                    // 🎙️ STEP 3 & STEP 7: Voice Control Panel
+                    // 🎙️ Voice Control Panel
                     VoiceControlPanel(
                         voiceState = voiceState,
                         settings = settings,
@@ -199,19 +197,7 @@ fun SilverCalculatorScreen(
                             micPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
                         },
                         onStartListening = viewModel::startVoiceListening,
-                        onStopListening = viewModel::stopVoiceListening,
-                        onExampleClicked = { example ->
-                            viewModel.processVoiceCommand(example)
-                        }
-                    )
-
-                    // 🟣 Purity Selector (999, 925)
-                    PuritySelectorChips(
-                        options = SilverPurity.entries,
-                        selected = uiState.selectedPurity,
-                        onSelect = viewModel::onPuritySelect,
-                        labelProvider = { it.label },
-                        finenessProvider = { it.fineness }
+                        onStopListening = viewModel::stopVoiceListening
                     )
 
                     // Weight Section (Gram + Milligram)
