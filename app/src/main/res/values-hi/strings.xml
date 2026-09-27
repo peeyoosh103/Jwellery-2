@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Peeyoosh_Creation</string>
+    <string name="app_subtitle">सरल एवं तीव्र (Simple &amp; Fast)</string>
+
+    <!-- Navigation / Home -->
+    <string name="title_gold_calc">सोना कैलकुलेटर (Gold)</string>
+    <string name="subtitle_gold_calc">24K, 22K, 18K सोने का सटीक मूल्य</string>
+    <string name="title_silver_calc">चांदी कैलकुलेटर (Silver)</string>
+    <string name="subtitle_silver_calc">999, 925 चांदी का सटीक मूल्य</string>
+    <string name="title_history">इतिहास (History)</string>
+    <string name="subtitle_history">सुरक्षित किए गए हिसाब</string>
+    <string name="title_settings">सेटिंग्स (Settings)</string>
+    <string name="subtitle_settings">थीम, जीएसटी, भाषा एवं आवाज़</string>
+
+    <!-- Calculation UI -->
+    <string name="gold_calculator_title">सोने का तुरंत हिसाब</string>
+    <string name="silver_calculator_title">चांदी का तुरंत हिसाब</string>
+
+    <string name="weight_label">वजन (Weight)</string>
+    <string name="gram_label">ग्राम (Gram)</string>
+    <string name="milligram_label">मिलीग्राम (Milligram)</string>
+    <string name="total_weight_label">कुल वजन: %1$s ग्राम</string>
+
+    <string name="purity_label">शुद्धता (Purity)</string>
+    <string name="gold_rate_label">सोने का भाव (₹ प्रति 10 ग्राम)</string>
+    <string name="gold_rate_hint">उदा. 100000</string>
+    <string name="silver_rate_label">चांदी का भाव (₹ प्रति 1 किलो)</string>
+    <string name="silver_rate_hint">उदा. 120000</string>
+
+    <string name="making_charge_label">मेकिंग चार्ज (Making Charge %)</string>
+    <string name="making_charge_desc">गहना बनाने का चार्ज</string>
+    <string name="wastage_label">वेस्टेज (Wastage %)</string>
+    <string name="wastage_desc">वेस्टेज के नाम पर लिया गया चार्ज</string>
+    <string name="gst_label">जीएसटी (GST %)</string>
+
+    <string name="btn_calculate_gold">सोने का भाव निकालें</string>
+    <string name="btn_calculate_silver">चांदी का भाव निकालें</string>
+
+    <!-- Results -->
+    <string name="result_gold_value">सोने का मूल्य</string>
+    <string name="result_silver_value">चांदी का मूल्य</string>
+    <string name="result_making_charge">मेकिंग चार्ज</string>
+    <string name="result_wastage">वेस्टेज चार्ज</string>
+    <string name="result_taxable_amount">टैक्सेबल राशि</string>
+    <string name="result_gst">जीएसटी</string>
+    <string name="result_total_amount">कुल देय राशि (TOTAL)</string>
+
+    <string name="btn_recalculate">नया हिसाब</string>
+    <string name="btn_read_result">बोलकर बताएं</string>
+    <string name="btn_save">सेव करें</string>
+    <string name="btn_share">शेयर करें</string>
+    <string name="btn_edit">बदलें</string>
+    <string name="saved_success">हिसाब सफलतापूर्वक सेव हुआ</string>
+
+    <!-- History -->
+    <string name="filter_all">सभी</string>
+    <string name="filter_gold">सोना (Gold)</string>
+    <string name="filter_silver">चांदी (Silver)</string>
+    <string name="no_history">कोई पुराना हिसाब नहीं है।</string>
+    <string name="clear_history">इतिहास साफ करें</string>
+    <string name="clear_history_confirm">क्या आप सभी सुरक्षित हिसाब मिटाना चाहते हैं?</string>
+    <string name="delete">हटाएं</string>
+    <string name="cancel">रद्द करें</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">दिखावट (Theme)</string>
+    <string name="theme_system">सिस्टम अनुसार</string>
+    <string name="theme_light">लाइट मोड</string>
+    <string name="theme_dark">डार्क मोड</string>
+    <string name="settings_language">भाषा (Language)</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिंदी (Hindi)</string>
+    <string name="settings_calculator">कैलकुलेटर डिफॉल्ट्स</string>
+    <string name="default_gst">डिफ़ॉल्ट जीएसटी (%)</string>
+    <string name="rounding_preference">राउंडिंग प्राथमिकता</string>
+    <string name="round_two_decimals">2 दशमलव (मानक)</string>
+    <string name="round_exact">सटीक मान</string>
+    <string name="settings_voice">आवाज़ (TTS)</string>
+    <string name="voice_enabled">आवाज़ चालू/बंद</string>
+    <string name="speech_speed">बोलने की गति</string>
+    <string name="speed_slow">धीमी (0.8x)</string>
+    <string name="speed_normal">सामान्य (1.0x)</string>
+    <string name="speed_fast">तेज (1.2x)</string>
+    <string name="settings_history">इतिहास प्रबंधन</string>
+    <string name="auto_save_history">हिसाब अपने आप सेव करें</string>
+
+    <!-- Validation -->
+    <string name="error_empty_weight">कृपया वजन दर्ज करें।</string>
+    <string name="error_empty_rate">कृपया भाव दर्ज करें।</string>
+    <string name="error_invalid_percentage">कृपया सही प्रतिशत दर्ज करें।</string>
+    <string name="error_negative">ऋणात्मक मान मान्य नहीं है।</string>
+</resources>

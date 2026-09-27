@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="0"
+        android:translateY="0">
+        <!-- Diamond Crown -->
+        <path
+            android:fillColor="#E9D5FF"
+            android:pathData="M54,28 L66,40 L42,40 Z" />
+        <path
+            android:fillColor="#C084FC"
+            android:pathData="M42,40 L34,40 L38,28 L54,28 Z" />
+        <path
+            android:fillColor="#A855F7"
+            android:pathData="M66,40 L74,40 L70,28 L54,28 Z" />
+        <!-- Diamond Pavilion -->
+        <path
+            android:fillColor="#7E22CE"
+            android:pathData="M34,40 L54,58 L42,40 Z" />
+        <path
+            android:fillColor="#9333EA"
+            android:pathData="M42,40 L54,58 L66,40 Z" />
+        <path
+            android:fillColor="#6B21A8"
+            android:pathData="M66,40 L54,58 L74,40 Z" />
+
+        <!-- Gold Ingot / Bar Base -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M32,62 L76,62 L80,74 L28,74 Z" />
+        <path
+            android:fillColor="#F59E0B"
+            android:pathData="M28,74 L80,74 L78,80 L30,80 Z" />
+        <path
+            android:fillColor="#FEF08A"
+            android:pathData="M35,64 L73,64 L75,69 L33,69 Z" />
+
+        <!-- Gold Stamp 'Au' -->
+        <path
+            android:fillColor="#78350F"
+            android:pathData="M50,71 L52,71 L51,68 Z" />
+    </group>
+</vector>

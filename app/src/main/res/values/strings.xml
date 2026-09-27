@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Peeyoosh_Creation</string>
+    <string name="app_subtitle">Simple &amp; Fast</string>
+
+    <!-- Navigation / Home -->
+    <string name="title_gold_calc">Gold Calculator</string>
+    <string name="subtitle_gold_calc">Quick 24K, 22K, 18K Price</string>
+    <string name="title_silver_calc">Silver Calculator</string>
+    <string name="subtitle_silver_calc">Quick 999, 925 Price</string>
+    <string name="title_history">History</string>
+    <string name="subtitle_history">Saved calculations</string>
+    <string name="title_settings">Settings</string>
+    <string name="subtitle_settings">Theme, GST, Language &amp; Voice</string>
+
+    <!-- Calculation UI -->
+    <string name="gold_calculator_title">Quick Gold Calculation</string>
+    <string name="silver_calculator_title">Quick Silver Calculation</string>
+
+    <string name="weight_label">Weight</string>
+    <string name="gram_label">Gram</string>
+    <string name="milligram_label">Milligram</string>
+    <string name="total_weight_label">Total Weight: %1$s g</string>
+
+    <string name="purity_label">Purity</string>
+    <string name="gold_rate_label">Gold Market Rate (₹ per 10 g)</string>
+    <string name="gold_rate_hint">e.g. 100000</string>
+    <string name="silver_rate_label">Silver Market Rate (₹ per 1 kg)</string>
+    <string name="silver_rate_hint">e.g. 120000</string>
+
+    <string name="making_charge_label">Making Charge (%)</string>
+    <string name="making_charge_desc">Gehna banane ka charge</string>
+    <string name="wastage_label">Wastage (%)</string>
+    <string name="wastage_desc">Wastage ke naam par liya gaya charge</string>
+    <string name="gst_label">GST (%)</string>
+
+    <string name="btn_calculate_gold">CALCULATE GOLD PRICE</string>
+    <string name="btn_calculate_silver">CALCULATE SILVER PRICE</string>
+
+    <!-- Results -->
+    <string name="result_gold_value">Gold Value</string>
+    <string name="result_silver_value">Silver Value</string>
+    <string name="result_making_charge">Making Charge</string>
+    <string name="result_wastage">Wastage</string>
+    <string name="result_taxable_amount">Taxable Amount</string>
+    <string name="result_gst">GST</string>
+    <string name="result_total_amount">TOTAL AMOUNT</string>
+
+    <string name="btn_recalculate">Recalculate</string>
+    <string name="btn_read_result">Read Result</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_edit">Edit</string>
+    <string name="saved_success">Calculation saved to History</string>
+
+    <!-- History -->
+    <string name="filter_all">All</string>
+    <string name="filter_gold">Gold</string>
+    <string name="filter_silver">Silver</string>
+    <string name="no_history">No calculations saved yet.</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_history_confirm">Are you sure you want to delete all saved calculations?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Appearance</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light Mode</string>
+    <string name="theme_dark">Dark Mode</string>
+    <string name="settings_language">Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिंदी (Hindi)</string>
+    <string name="settings_calculator">Calculator Defaults</string>
+    <string name="default_gst">Default GST (%)</string>
+    <string name="rounding_preference">Rounding Preference</string>
+    <string name="round_two_decimals">2 Decimal Places (Standard)</string>
+    <string name="round_exact">Exact Value (No Rounding)</string>
+    <string name="settings_voice">Voice &amp; Speech</string>
+    <string name="voice_enabled">Voice (TTS) ON/OFF</string>
+    <string name="speech_speed">Speech Speed</string>
+    <string name="speed_slow">Slow (0.8x)</string>
+    <string name="speed_normal">Normal (1.0x)</string>
+    <string name="speed_fast">Fast (1.2x)</string>
+    <string name="settings_history">History Management</string>
+    <string name="auto_save_history">Save to History automatically</string>
+
+    <!-- Validation -->
+    <string name="error_empty_weight">Please enter weight.</string>
+    <string name="error_empty_rate">Please enter rate.</string>
+    <string name="error_invalid_percentage">Please enter a valid percentage.</string>
+    <string name="error_negative">Value cannot be negative.</string>
+</resources>
